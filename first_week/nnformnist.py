@@ -15,9 +15,21 @@ import os
 import torch.nn as nn
 import torchvision.transforms as transforms
 
+def set_seed(seed):
+	'''
+	固定随机种子
+	'''
+	torch.manual_seed(seed)
+	torch.cuda.manual_seed_all(seed)
+	np.random.seed(seed)
+	random.seed(seed)
+	torch.backends.cudnn.deterministic = True
+
+set_seed(21)
+
+
 # 选择cuda或者cpu
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
 
 # =============================
 # 构建模型类（两层的神经网络）
@@ -137,6 +149,7 @@ def main(agrs):
 			labels = labels.to(device)
 
 			outputs = net(images)
+			# 预测结果
 			_, predictions = torch.max(outputs,1)
 
 			epoch_num += batch_size
