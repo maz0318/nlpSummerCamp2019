@@ -3,7 +3,8 @@ torch: 就是pytorch
 torchvision: 是一个视觉的库，包括数据集，对图片处理的方式和遇训练好的模型
 argparse: 统一配置超参数的库
 os: 对系统的一些操作命令库
-
+random：随机数库
+numpy: 科学计算库
 torch.nn:  里面包含了很多已经写好的神经网络
 torchvision.transforms: 包含了很多对图片的处理
 '''
@@ -11,7 +12,8 @@ import torch
 import torchvision
 import argparse
 import os
-
+import random
+import numpy as np
 import torch.nn as nn
 import torchvision.transforms as transforms
 
