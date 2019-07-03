@@ -88,7 +88,7 @@ def main(agrs):
 											  shuffle=False)
 
 	# 构建模型
-	net = NN(args.input_size, args.hidden_size, args.num_classes)
+	net = NN(args.input_size, args.hidden_size, args.num_classes).to(device)
 
 	# 优化器 传入nn的参数，用梯度下降来更新参数
 	optimizer = torch.optim.Adam(net.parameters(), lr=args.lr)
