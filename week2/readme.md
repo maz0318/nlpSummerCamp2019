@@ -16,3 +16,9 @@
   * 最后的评判标准要计算precision，recall和f1-score
 
   * 这个数据集Pytorch里事先没有集成，所以要自己写dataset。
+
+#### 实验二
+
+用Bi-LSTM+CRF实现命名实体识别任务
+
+做完了实验一，重写一个class类就可以，整体框架和流程不变
