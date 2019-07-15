@@ -44,3 +44,18 @@ pytorch 1.0
 * 用LSTM实现NER
 
 * 用bi-LSTM+CRF实现NER
+
+  
+
+### 第三周计划
+
+由于大家对pytorch不是很熟悉，所以给大家推荐一个pytorch教程，本周自行去学习，同时阅读一篇caption的论文。
+
+教程：https://mlelarge.github.io/dataflowr-web/cea_edf_inria.html
+
+dataflowr:https://mlelarge.github.io/dataflowr-web/
+
+github:https://github.com/mlelarge/dataflowr
+
+论文:https://arxiv.org/abs/1411.4555
+
