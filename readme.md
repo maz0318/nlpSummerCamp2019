@@ -8,6 +8,8 @@ python 3.7
 
 pytorch 1.0
 
+### 第一阶段
+
 ### 第一周计划
 
 |     Date      |                          Assignment                          |
@@ -58,4 +60,21 @@ dataflowr:https://mlelarge.github.io/dataflowr-web/
 github:https://github.com/mlelarge/dataflowr
 
 论文:https://arxiv.org/abs/1411.4555
+
+
+
+### 第二阶段
+
+### 第四周计划
+
+本周，我们复现上周看的论文show and tell
+
+| Date | Assignment                                    |
+| ---- | --------------------------------------------- |
+| 7.22 | 对数据集进行预处理，放在process.py里          |
+| 7.23 | 对coco数据集写一个dataset放在data_loader.py里 |
+| 7.24 | 复现模型，放在model.py里                      |
+| 7.25 | 写训练主程序，放在train_nic.py里,并开始训练   |
+| 7.26 | 写好beam search，放在model.py里               |
+| 7.27 | 查看训练效果，写好报告                        |
 
