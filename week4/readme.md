@@ -27,3 +27,12 @@ coco提供了一个共我们可用的api    --pycocotools
 对于trani来说,要返回在一个mini-batch内按句子的长度排序的图片,句子，和句子的长度
 
 对于val来说，为了方便，我们batch size取1，返回图片和图片的id
+
+#### model.py
+
+模型应该包括两个部分
+
+* encoder我们采用预训练好的cnn（vgg16或resnet151)
+* decoder应该包含以下两个方法：
+  * forward，用来计算训练时每个时刻输出每个单词的概率。
+  * generator，测试时用来生成真正的句子。
