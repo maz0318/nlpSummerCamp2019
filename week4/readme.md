@@ -36,3 +36,21 @@ coco提供了一个共我们可用的api    --pycocotools
 * decoder应该包含以下两个方法：
   * forward，用来计算训练时每个时刻输出每个单词的概率。
   * generator，测试时用来生成真正的句子。
+
+#### train_nic.py
+
+训练的主程序之前在两个小实验中已经写过了，代码我也已经上传，大家可以参考。
+
+
+
+#### utils
+
+utils文件夹包含了一些要用的工具函数，我已经写好放了进去
+
+
+
+#### Note：
+
+不用服务器的同学，coco的评价指标需要自行安装，教程在https://github.com/flauted/coco-caption
+
+用服务器的同学暂时还不能用测试的函数，我安装完会及时通知
